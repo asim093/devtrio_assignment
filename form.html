@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Authentication</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="center" id="signup-form">
+            <div class="header">
+                <h2>User Signup</h2>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <form name="signupForm">
+                <div class="inputs">
+                    <div class="input-with-icon">
+                        <input type="text" name="username" placeholder="Enter Your Name" id="name" required>
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="input-with-icon">
+                        <input type="text" name="email" placeholder="Email" id="email" required>
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <span id="signup-error"></span>
+                    <div class="input-with-icon">
+                        <input type="password" placeholder="Password" name="password" id="pass" required>
+                        <i class='bx bx-lock-alt'></i>
+                    </div>
+                    <span id="signup-pass-error"></span>
+                </div>
+                <button type="button" onclick="handleSignup()" id="signup-button">Signup</button>
+            </form>
+            <div class="radios">
+                <div>
+                    <input type="checkbox"><span>Remember Me</span>
+                </div>
+                <div>
+                    <span>Already have an account? <a href="#" onclick="showLoginForm()" id="idlogin">login</a></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- login page  -->
+
+        <div class="center" id="login-form" style="display: none;">
+            <div class="header">
+                <h2>User Login</h2>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <form name="signupForm">
+                <div class="inputs">
+                    <div class="input-with-icon">
+                        <input type="text" name="email" placeholder="Email" id="login_email">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <span id="signup-error"></span>
+                    <div class="input-with-icon">
+                        <input type="password" placeholder="Password" name="password" id="login_password">
+                        <i class='bx bx-lock-alt'></i>
+                    </div>
+                    <span id="signup-pass-error"></span>
+                </div>
+                <button type="button" onclick="handlelogin()" id="login">Login</button>
+            </form>
+            <div class="radios">
+                <div>
+                    <input type="checkbox"><span>Remember Me</span>
+                </div>
+                <div>
+                    <span>Don't have an account? <a href="#" onclick="showsignupForm()" id="idsignin">Signup</a></span>
+                </div>
+            </div>
+        </div>
+
+        <script type="module" src="./modules/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+       
+</body>
+
+</html>

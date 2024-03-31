@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fs-1" href="#" id="logo" class="logo">
+
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon  "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
+                    <li class="nav-item px-3 fs-5">
+                        <a class="nav-link " href="#">Home</a>
+                    </li>
+                    <li class="nav-item px-3 fs-5">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item px-3 fs-5">
+                        <a class="nav-link" href="#product">Products</a>
+                    </li>
+                    <li class="nav-item px-3 fs-5">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-danger" onclick="logoutuser()">Logout</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <div class="container-fluid container-fluid-1">
+        <div class="container custom-container-color">
+            <div class="row">
+                <section class="col-lg-6 order-lg-1" data-aos="fade-up">
+                    <div
+                        class="hero-section-content d-flex flex-column justify-content-center align-items-start text-center text-lg-start ">
+                        <h1>Buy Best Product From All Over The World</h1>
+                        <p>In today's fast-paced world, where trends come and go in the blink of an eye, finding your
+                            unique
+                            fashion identity can seem like a daunting task. With countless options and influences
+                            bombarding
+                            us from every direction, it's easy to feel overwhelmed and lost in a sea of choices. </p>
+                        <div class="d-flex justify-content-center justify-content-lg-start align-items-center">
+                            <img src="./assets/app-store (1).svg" alt="App Store 1">
+                            <img src="./assets/google-play.svg" alt="App Store 2">
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-6 order-lg-2 ">
+                    <figure class="hero-section-img d-flex align-items-center justify-content-end ">
+                        <img src="./assets/landing_page.png" alt="Landing Page" class="img-fluid animated-image ">
+                    </figure>
+                </section>
+            </div>
+        </div>
+    </div>
+  
+
+    <div class="container-fluid container-fluid-2" id="product">
+        <h1 class="text-center my-5">Try Our Latest Products</h1>
+
+        <div class="row d-flex justify-content-center " id="userData">
+
+
+        </div>
+    </div>
+    <footer class="bg-light text-center ">
+        <div class="container p-4">
+
+            <section class="mb-4">
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+
+
+            <section class="" id="contact">
+                <form action="">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>Sign up for our newsletter</strong>
+                            </p>
+                        </div>
+
+                        <div class="col-md-5 col-12">
+                            <div class="form-outline mb-4">
+                                <input type="email" id="form5Example2" class="form-control" />
+                                <label class="form-label" for="form5Example2">Email address</label>
+                            </div>
+                        </div>
+
+                        <div class="col-auto">
+
+                            <button type="submit" class="btn btn-primary mb-4">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+
+            <section class="mb-4">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                    distinctio earum repellat quaerat voluptatibus placeat nam,
+                    commodi optio pariatur est quia magnam eum harum corrupti dicta,
+                    aliquam sequi voluptate quas.
+                </p>
+            </section>
+
+            <section class="footer">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0 column d-flex justify-content-center flex-column justify-content-lg-start   align-content-start align-items-start">
+                        <h5 class="text-uppercase">BEAUTY</h5>
+
+                        <ul class="list-unstyled mb-0 d-flex justify-content-center flex-column justify-content-lg-start   align-content-start align-items-start">
+                            <li>
+                                <a href="#!" class="text-dark">Fragrance 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-dark"> Make-Up</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-dark">Haircare</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-dark">Skincare</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0 column d-flex justify-content-center flex-column justify-content-lg-start   align-content-start align-items-start">
+                        <h5 class="text-uppercase">ELECTRONICS</h5>
+
+                        <ul class="list-unstyled mb-0 d-flex justify-content-center flex-column justify-content-lg-start   align-content-start align-items-start">
+                            <li>
+                                <a href="#!" class="text-dark"> Camera, Photo & video</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-dark">Televisions</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-dark">Headphones</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-dark">Video Games</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0 column d-flex justify-content-center flex-column justify-content-lg-start   align-content-start align-items-start">
+                        <h5 class="text-uppercase"> Accessories</h5>
+
+                        <ul class="list-unstyled  mb-0  d-flex justify-content-center flex-column justify-content-lg-start   align-content-start align-items-start">
+                            <li>
+                                <a href="#!" class="text-dark">Mobiles</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-dark">Laptops</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-dark">Tablets</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-dark">Home Appliances</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0 d-flex justify-content-center flex-column justify-content-lg-start   align-content-start align-items-start ">
+                        <h5 class="text-uppercase">HOME AND KITCHEN</h5>
+
+                        <ul class="list-unstyled mb-0 d-flex justify-content-center flex-column justify-content-lg-start   align-items-start">
+                            <li>
+                                <a href="#!" class="text-dark"> Bath</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-dark">Home Decor</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-dark">Kitchen & Dining</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-dark">Tools & Home Improvement</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2024 Copyright:
+            <a class="text-dark" href="https://mdbootstrap.com/">ecommerce.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <script src="./modules/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000
+        });
+    </script>
+
+</body>
+
+</html>
